@@ -1,0 +1,55 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes counter-spin {
+  to {
+    transform: rotateX(66deg) rotateZ(-348deg);
+  }
+}
+
+@keyframes ribbon-drift {
+  from {
+    filter: blur(8px);
+    translate: -3vw -2vh;
+  }
+  to {
+    filter: blur(18px);
+    translate: 5vw 3vh;
+  }
+}
+
+@keyframes aurora-pulse {
+  from {
+    filter: blur(18px);
+    opacity: .78;
+    transform: scale(.97) rotate(-4deg);
+  }
+  to {
+    filter: blur(28px);
+    opacity: 1;
+    transform: scale(1.05) rotate(5deg);
+  }
+}
+
+@keyframes comet-float {
+  from {
+    opacity: .42;
+    translate: -10px 8px;
+  }
+  to {
+    opacity: 1;
+    translate: 12px -10px;
+  }
+}
+
+@keyframes scan {
+  0%, 100% {
+    transform: translateY(-40%);
+  }
+  50% {
+    transform: translateY(230%);
+  }
+}
